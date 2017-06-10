@@ -108,3 +108,7 @@
 .reveal .slides section .fragment.highlight-current.current-fragment {
   background-color: yellow;
 }
+
+/* Utilities, inspired by Tachyons */
+.reveal .pb1 { padding-bottom: 1em; }
+.reveal .w50 { width: 50%; }
