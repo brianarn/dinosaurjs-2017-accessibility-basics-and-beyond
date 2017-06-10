@@ -1,4 +1,11 @@
 /* Overriding Sky theme bits */
+.reveal {
+  /*
+   * Somewhere between Reveal 3.3 and 3.5, this bumped up to 40px,
+   * and that's breaking my everything.
+   */
+  font-size: 36px;
+}
 .reveal .slides h1,
 .reveal .slides h2,
 .reveal .slides h3,
@@ -8,6 +15,7 @@
   /*font-family: "Open Sans", sans-serif;*/
   font-weight: bold;
   text-transform: none;
+  letter-spacing: -0.04em;
 }
 
 .reveal .slides h1,
