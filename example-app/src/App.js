@@ -6,7 +6,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Accessibility Basics</h1>
+        <header>
+          <nav className="pa2">
+            <a className="link f6" href="/">Home</a>
+          </nav>
+          <h1 className="tc">Accessibility Basics</h1>
+        </header>
       </div>
     );
   }
