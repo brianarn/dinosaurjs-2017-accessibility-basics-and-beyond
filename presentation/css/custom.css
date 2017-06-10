@@ -1,0 +1,102 @@
+/* Overriding Sky theme bits */
+.reveal .slides h1,
+.reveal .slides h2,
+.reveal .slides h3,
+.reveal .slides h4,
+.reveal .slides h5,
+.reveal .slides h6 {
+  /*font-family: "Open Sans", sans-serif;*/
+  font-weight: bold;
+  text-transform: none;
+}
+
+.reveal .slides h1,
+.reveal .slides h2.upcase,
+.reveal .slides h3.upcase,
+.reveal .slides h4.upcase,
+.reveal .slides h5.upcase,
+.reveal .slides h6.upcase {
+  text-transform: uppercase;
+}
+
+.reveal .slides h1 {
+  font-size: 6em;
+}
+
+.reveal .slides h2 {
+  font-size: 5em;
+}
+
+.reveal .slides h3 {
+  font-size: 4em;
+}
+
+.reveal .slides h4 {
+  font-size: 3em;
+}
+
+.reveal .slides h5 {
+  font-size: 2em;
+}
+
+.reveal .slides h6 {
+  font-size: 1em;
+}
+
+.reveal .slides p,
+.reveal .slides li {
+  font-size: 2em;
+}
+
+.reveal .slides blockquote {
+  text-align: left;
+}
+
+.reveal .slides blockquote cite {
+  font-size: 1.5em;
+}
+
+.reveal .slides pre {
+  font-size: 1.4em;
+}
+
+.reveal .slides footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.75em;
+}
+
+.reveal .slides .subtitle {
+  font-size: 2em;
+  padding-top: 0.5em;
+}
+
+.reveal .slides .intro img {
+  float: left;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  float: left;
+  vertical-align: middle;
+}
+
+.reveal .slides .intro ul {
+  margin-top: 3em;
+}
+
+/* Custom transitions */
+.reveal .slides section .fragment.bold-current {
+  opacity: 1;
+  visibility: visible;
+}
+.reveal .slides section .fragment.bold-current.current-fragment {
+  font-weight: bold;
+}
+.reveal .slides section .fragment.highlight-current {
+  opacity: 1;
+  visibility: visible;
+}
+.reveal .slides section .fragment.highlight-current.current-fragment {
+  background-color: yellow;
+}
