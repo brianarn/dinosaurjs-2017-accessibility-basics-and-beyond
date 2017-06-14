@@ -111,4 +111,10 @@
 
 /* Utilities, inspired by Tachyons */
 .reveal .pb1 { padding-bottom: 1em; }
+.reveal .pt1 { padding-top: 1em; }
 .reveal .w50 { width: 50%; }
+
+/* Slide-specific styles */
+.inclusive-design img.fragment {
+  width: 100%;
+}
