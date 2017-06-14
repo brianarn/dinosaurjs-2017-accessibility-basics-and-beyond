@@ -1,0 +1,152 @@
+.annot_link_parent {
+  position: relative;
+}
+
+.targeted {
+  outline: #88a solid 3px;
+}
+
+#warning, #annotations, #footer, #lightbox_container {
+  border-color: #3696c4;
+  font-size: 0.85em;
+}
+
+#lightbox_background.active {
+  width: 100%;
+  background: #7b7d77;
+  background: rgba(85, 87, 83, .7);
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  background-image: url(../img/empty.gif);
+}
+
+#close_link {
+  position: absolute;
+  color: #fff;
+  right: .5em;
+  top: .2em;
+}
+
+#close_link:focus, #close_link:active {
+  color: #f00;
+  background: none;
+}
+
+#annotations {}
+
+#annotations h2 {
+  text-align: center;
+}
+
+#annotations h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+#annotations div {
+  margin: 25px auto 0;
+  border: solid 3px #3696C4;
+  padding: 1em;
+  color: #000;
+  width: 50em;
+  background-color: #fff;
+}
+
+#annotations h3 a:active, #annotations h3 a:focus {
+  background: none;
+}
+
+#annotations a, #footer a:focus, #footer a:active {
+  color: #801000;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+#annotations ins, #lightbox_container ins {
+  color: #060;
+}
+
+#annotations p.code, #lightbox_container p.code {
+  border: solid 1px #000;
+  padding: .3em .1em;
+  background: #ddd;
+  font-size: 1.1em;
+}
+
+#annotations dt, #lightbox_container dt {
+  padding: 1em 0 .2em;
+  color: #444;
+  font-family: "Courier New", Courier, monospace, serif;
+}
+
+#annotations dd, #lightbox_container dd {
+  padding: 0 0 0 1.5em;
+  margin: 0;
+}
+
+.annot_link {
+  position: absolute !important;
+  top: .5em !important;
+  left: 0 !important;
+  border: dashed blue !important;
+  border-width: 1px 0 0 !important;
+  margin-left: -1.5em !important;
+  width: 1.8em !important;
+}
+
+.annot_link a {
+  margin: -0.6em 0 0 -1em !important;
+  position: relative !important;
+  display: block !important;
+  z-index: 2 !important;
+  min-height: 1em !important;
+  height: 1.1em !important;
+  width: 1.6em !important;
+  color: #22c !important;
+  border: solid 1px blue !important;
+  border-top-width: 2px !important;
+  line-height: 1em !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  font-family: "Courier New", Courier, monospace !important;
+  font-size: 90% !important;
+  font-weight: bold !important;
+  background: #eff !important;
+  padding: 0 !important;
+}
+
+.annot_link  a:focus, .annot_link  a:active, .annot_link  a:hover {
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #000; !important;
+}
+
+.annot_link img {
+  vertical-align: baseline !important;
+  position: absolute;
+}
+
+.active #lightbox_container {
+  position: relative;
+  border: solid 1px #22c;
+  margin: 0 auto;
+  background: white;
+  padding: 1em;
+  width: 45em;
+}
+
+.active #lightbox_container h3 {
+  margin: -1em -1em 0;
+  padding: 0.2em 1em;
+  background: #22a;
+  font-size: 100%;
+  color: #fff;
+}
+
+.active #lightbox_container h3:focus {
+  outline: solid .2em #22c;
+}

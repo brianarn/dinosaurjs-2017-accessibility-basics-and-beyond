@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>Welcome to CityLights! [Accessible Home Page]</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href="../css/main.css" rel="stylesheet" type="text/css">
+    <script src="../js/onload.js" type="text/javascript"></script>
+    <script src="../js/localdate.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div id="meta-header">
+      <p id="skipnav"><a href="#page">Skip to accessible demo page</a></p>
+      <p id="logos"><a href="http://www.w3.org/" title="W3C Home"><img alt="W3C logo" src="../img/w3c.png" height="48" width="72"></a><a href="http://www.w3.org/WAI/" title="WAI Home"><img alt="Web Accessibility Initiative (WAI) logo" src="../img/wai.png" height="48"></a></p>
+      <h1><span class="subhead">Accessible Home Page</span><span class="hidden"> -</span> Before and After Demonstration</h1>
+      <p class="subline">Improving a Web site using Web Content Accessibility Guidelines (WCAG) 2.0</p>
+      <div id="mnav" class="accessible">
+        <ul>
+          <li class="first"><a href="../Overview.html">Overview</a></li>
+          <li class="current first"><span class="hidden">Current location: </span>Home
+            <div class="subnav"><ul>
+              <li class="inaccessible"><strong>Inaccessible:</strong><a href="../before/home.html" class="page"><span class="hidden">Inaccessible </span>Home Page</a><a href="../before/reports/home.html" class="report"><span class="hidden">Inaccessible Home Page </span> Report</a></li>
+              <li class="accessible"><strong>Accessible:</strong><a class="page current"><span class="hidden">Accessible </span>Home Page</a><a href="./reports/home.html" class="report"><span class="hidden">Accessible Home Page </span> Report</a></li>
+            </ul><a href="./annotated/home.html" class="annotoggle">Show <br>Annotations</a></div>
+          </li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="survey.html">Survey</a></li>
+          <li><a href="template.html">Template</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="page">
+      <div id="border_t"></div>
+      <div id="border_l">
+        <div id="border_r">
+          <p class="skip" id="startcontent">Demo starts here</p>
+          <ul class="skip">
+            <li><a href="#content">Skip to content (within demo page)</a></li>
+            <li><a href="#navtarget">Skip to navigation (within demo page)</a></li>
+          </ul>
+          <div id="header">
+            <a><img src="./img/toplogo.png" alt="Citylights: your access to the city."></a><img src="./img/weather.png" alt="Sunny Spells">
+            <form action="../offsite.html" method="post" onsubmit="if(qkmenu.value=='0'){return false;}">
+              <div>
+                <label for="qkmenu" id="qklabel">Explore Site by Topic:</label> <select name="qkemnu" id="qkmenu">
+                  <option value="0">Quick Menu</option>
+                  <option>Broadcasting</option>
+                  <option>Education</option>
+                  <option>Electricity</option>
+                  <option>Fire service</option>
+                  <option>Gas service</option>
+                  <option>Health care</option>
+                  <option>Police service</option>
+                  <option>Public Libraries</option>
+                  <option>Social services</option>
+                  <option>Social housing</option>
+                  <option>Telecommunications</option>
+                  <option>Town planning</option>
+                  <option>Transportation</option>
+                  <option>Waste management</option>
+                  <option>Water services</option>
+                </select> <input type="submit" value="Go">
+              </div>
+            </form>
+          </div>
+          <div id="info">
+            <p class="left"><strong>Traffic:</strong> Construction work on Main Road</p>
+            <p class="right" id="weather"><strong>Today:</strong> Wednesday 25 January 2012, Sunny Spells, 23&deg;C</p>
+          </div>
+          <div id="main">
+            <h2 id="navtarget" class="skip">Navigation menu:</h2>
+            <div id="nav">
+              <ul>
+                <li class="home_set"><a>Home</a></li>
+                <li class="news"><a href="news.html">News</a></li>
+                <li class="facts"><a href="tickets.html">Tickets</a></li>
+                <li class="survey"><a href="survey.html">Survey</a></li>
+              </ul>
+            </div>
+            <div id="content">
+              <div id="contentmain">
+                <h1>Welcome to CityLights</h1>
+                <p>Citylights is the new portal for visitors and residents. Find out what's on, book tickets, and get the latest news.</p>
+                <div class="news">
+                  <h2><a href="news.html#story1">Heat wave linked to temperatures</a></h2> 
+                  <p class="image"><img src="./img/panda-sm.jpg" alt=""></p>
+                  <p>After three years of effort city scientists now agree that the primary cause of the 2003 heatwave was hot air from...<br><a href="news.html#story1" class="more">Heat wave -<br>full story</a></p>
+                </div>
+                <div class="news">
+                  <h2><a href="news.html#story2">Man Gets Nine Months in Violin Case</a></h2>
+                  <p class="image"><img src="./img/oldenburgstudentviolin34.jpg" alt=""></p> 
+                  <p>Mayor: These kinds of crimes need more creative, effective punishments. For example, we could require...<br><a href="news.html#story2" class="more">Violin case -<br>full story</a></p>
+                </div>
+                <div class="news ">
+                  <h2><a href="news.html#story3">Lack of brains hinders research</a></h2>
+                  <p class="image"><img src="./img/BrainInJar.jpg" alt=""></p> 
+                  <p>Brain donations: huge drop off in brain donations due to the great 'success' of 'Slow Traffic, Safe...<br><a href="news.html#story3" class="more">Brain donations -<br>full story</a></p>
+                </div>
+                <h2 class="header">Elsewhere on the Web</h2>
+                <p>Please see the following websites for important information. Citylights take no responsibility for their content. For artichoke advice, call the number below.</p>
+                <ul class="elsewhere">
+                  <li><a href="../offsite.html">Killer Bees</a></li>
+                  <li><a href="../offsite.html">Onions</a></li>
+                </ul> 
+                <p><strong>Artichoke advice telephone hotline:<br>(1) 269 24653 / (1) 269 C-H-O-K-E</strong></p>
+              </div>
+              <div id="contentright">
+                <h2>Citylights Concert</h2>
+                <img src="./img/teaser_right1.jpg" alt="Free Penguins playing on stage"> 
+                <p class="spacebelow"><q>Free penguins</q> slogan at zoo benefit concert causes confusion among city rockers. Adjective or verb?<br><a href="tickets.html" class="more">Buy Tickets</a></p>
+                <h2>Citylights Survey</h2>
+                <img src="./img/teaser_right2.jpg" alt="Anemone-Snowdrop flower blooming">
+                <p class="spacebelow">More parks and more green space throughout the city at the price of already rare car parking spaces; how will this affect you?<br><a href="survey.html" class="more">Take Survey</a></p>
+              </div>
+            </div>
+          </div>
+          <div id="footer">
+            <p><a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &copy; 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>&reg;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>)</p>
+          </div>
+        </div>
+      </div>
+      <div id="border_b"></div>
+    </div>
+    <div id="meta-footer" class="meta">
+      <hr>
+      <p><strong>Status:</strong> 20 February 2012 (see <a href="../changelog.html">changelog</a>) <br>Editors: <a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> and the <a href="http://www.w3.org/WAI/EO/">Education and Outreach Working Group (EOWG)</a>. <br>Developed with support from <a href="http://www.w3.org/WAI/TIES/"><acronym title="Web Accessibility Initiative: Training, Implementation, Education, Support">WAI-TIES</acronym></a> and <a href="http://www.w3.org/WAI/WAI-AGE/"><acronym title="Web Accessibility Initiative: Ageing Education and Harmonisation">WAI-AGE</acronym></a> projects, co-funded by the European Commission <acronym title="Information Society Technologies">IST</acronym> Programme. [see <a href="../acks.html">Acknowledgements</a>]</p>
+      <p>[<a href="http://www.w3.org/WAI/sitemap.html" shape="rect">WAI Site Map</a>] [<a href="http://www.w3.org/WAI/sitehelp.html" shape="rect">Help with WAI Website</a>] [<a href="http://www.w3.org/WAI/search.php" shape="rect">Search</a>] [<a href="http://www.w3.org/WAI/contacts" shape="rect">Contacting WAI</a>] <br><strong>Feedback welcome to <a href="mailto:wai-eo-editors@w3.org" shape="rect">wai-eo-editors@w3.org</a></strong> (a publicly archived list) or <a href="mailto:wai@w3.org" shape="rect">wai@w3.org</a> (a WAI staff-only list).</p>
+      <div class="copyright"><p><a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &copy; 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>&reg;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> and <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-software">software licensing</a> rules apply. Your interactions with this site are in accordance with our <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Public">public</a> and <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Members">Member</a> privacy statements.</p></div>
+    </div>
+  </body>
+</html>

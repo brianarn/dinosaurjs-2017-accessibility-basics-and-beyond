@@ -1,0 +1,329 @@
+.hidden, .collapse {
+  display: none;
+}
+
+.reportControls a {
+  color: #044;
+  text-decoration: none;
+  padding: .2em 1em;
+  border: solid 1px #044;
+  background: #eef;
+}
+
+/** Start of the report table style **/
+table.report {
+  width: 100%;
+  margin: 5px 0;
+  border: 0;
+  border-spacing: 0px;
+  border-collapse: separate;
+}
+
+table.report a, table.report a:visited {
+  color: #044;
+}
+
+table.report td img {
+  padding: .2em;
+}
+
+table.report a:hover {
+  color: #000;
+}
+
+table.report caption {
+  font-size: 120%;
+  padding: .3em
+}
+
+table.report td, table.report th {
+  padding: .3em;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+}
+
+table.report thead {
+  background: #333;
+  color: #ddd;
+}
+table.report thead th {
+  font-weight: bold;
+}
+
+table.report.script_on td:nth-child(1) {
+  text-align: right;
+  cursor: pointer;
+  min-width: 14px;
+}
+
+table.report.script_on .evaluation td:nth-child(1) {
+  cursor: auto;
+}
+
+table.report td:nth-child(5) {
+  text-align: center;
+}
+
+tr.principle {
+  background: #ffffe7;
+}
+
+tr.principle th {
+  font-weight: bold
+}
+
+tr.principle th, tr.principle td {
+  border-top: solid 1px #000;
+}
+
+tr.principle td:nth-child(5) {
+  border-style: solid;
+  border-width: 1px 1px 0;
+}
+
+tbody.fail tr.principle td:nth-child(5) {
+  background: #fcc;
+  border-color: #700;
+}
+
+tbody.fail tr.principle:hover {
+  background: #fff1e5;
+}
+
+tbody.pass tr.principle td:nth-child(5) {
+  background: #cfc;
+  border-color: #070;
+}
+
+tbody.pass tr.principle:hover {
+  background: #f1ffe5
+}
+
+tbody.nApp tr.principle td:nth-child(5) {
+  background: #dde2dd;
+  border-color: #787;
+}
+
+tbody.nApp tr.principle:hover {
+  background: #f6f7e9;
+}
+
+tr.guideline {
+  background: #fffff3;
+}
+
+tr.guideline th {
+  font-style: italic;
+}
+
+tr.guideline th, tr.guideline td	{
+  border-top: solid 1px #777;
+}
+
+tr.guideline.fail:hover {
+  background: #fff1e5;
+}
+
+tr.guideline.pass:hover {
+  background: #f1ffe5;
+}
+
+tr.guideline.nApp:hover {
+  background: #f6f7e9;
+}
+
+tr.criterion {
+  background: #fffff8;
+}
+
+tr.criterion em {
+  white-space: nowrap;
+}
+
+tr.criterion th, tr.criterion td {
+  border-top: solid 1px #999;
+}
+
+tr.criterion td:nth-child(1) {
+  border-top: none !important;
+  border-right: solid 1px #999;
+  background: #fffff3;
+}
+
+tr.criterion td:nth-child(4), tr.evaluation td:nth-child(4) {
+  padding-left:1.5em;
+}
+
+tr.criterion.new_level td, tr.criterion.new_level th {
+  border-top: groove 2px #999;
+}
+
+tr.criterion.pass:hover {
+  background: #f6fff3;
+}
+
+tr.criterion.fail:hover {
+  background: #fff6f3;
+}
+
+tr.criterion.nApp:hover {
+  background: #fafafa;
+}
+
+tr.evaluation {
+}
+
+tr.evaluation td:nth-child(1) {
+  border-right: solid 1px #999;
+  background: #fffff3;
+}
+
+tr.evaluation td:nth-child(1), tr.evaluation td:nth-child(2) {
+  background: #fffff8 !important;
+}
+
+tr.evaluation th:nth-child(3) {
+  border: solid;
+  border-width: 1px 0 0 1px;
+}
+
+tr.evaluation th, tr.evaluation td:nth-child(4) {
+  border: solid;
+  border-width: 1px 0 0;
+}
+
+tr.evaluation.pass th, tr.evaluation.pass td {
+  border-top-color: #6b6;
+  border-left-color: #6b6;
+}
+
+tr.evaluation.pass:hover th, tr.evaluation.pass:hover td	{
+  background: #f8fff8;
+}
+
+tr.evaluation.fail th, tr.evaluation.fail td {
+  border-top-color: #c66;
+  border-left-color: #c66;
+}
+
+tr.evaluation.fail:hover th, tr.evaluation.fail:hover td {
+  background: #fff8f8;
+}
+
+tr.evaluation td ul {
+  margin: .3em 0 .1em;
+  padding: 0;
+  list-style: disc;
+}
+
+tr.evaluation td ul ul{
+  margin: 0;
+  padding: 0 0 .4em 1.5em;
+  list-style: none;
+}
+
+/* #page */
+
+body {
+  background-color: #d7d7cd;
+}
+
+#exitpage a:visited, #page a:visited, #exitpage a:link, #page a:link {
+  color:#044;
+  text-decoration: underline;
+}
+
+#exitpage a:focus, #page a:focus, #exitpage a:hover, #page a:hover, #exitpage a:active, #page a:active {
+  color:#fff;
+  background-color: #044;
+  text-decoration: underline;
+}
+
+#page h2 a:focus, #page h2 a:hover, #page h2 a:active {
+  color:#333;
+  background-color: #fff;
+  text-decoration: none;
+}
+
+p.highlight-version {
+  margin-top: 0;
+  background-color: #ffa;
+  padding: 5px;
+  margin-right: 0;	
+  margin-bottom: 0;
+}
+
+.license {
+  clear: both;
+  background-color: #ffc;
+  overflow: auto;
+  padding: 5px;
+  border-top: 1px solid #999;
+}
+
+.license h2 {
+  margin: 0;
+  font-size: 1em;
+}
+
+.license p {
+  margin: .5em 0;
+  font-size: 1em;
+}
+
+#meta-header {
+  margin-bottom: 4em;
+}
+
+#page, #exitpage {
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+  color: #333;
+  width: 54em;
+  margin: 50px auto !important;
+  background: #fff;
+  padding: 0;
+  border: 1px solid #999;
+  -webkit-box-shadow: 0 0 10px #999;
+  -moz-box-shadow: 0 0 10px #999;
+  box-shadow: 0 0 10px #999;
+  line-height: 1.4;
+  font-size: 87.5%;
+  max-width: 98%;
+}
+
+#exitpage {
+  width: 25em;
+  padding-bottom: 10px;
+}
+
+#exitpage h1 {
+  margin: 0;
+  background-color: #ffa;
+  border-bottom: 1px solid #999;
+  padding: 10px;
+  line-height: 1.2;
+  font-size: 1.4em;
+}
+
+#exitpage p {
+  margin: 0;
+  padding: 10px 10px 0;
+}
+
+#page .main {
+  padding: 10px;
+}
+
+.reportControls {
+  text-align: right;
+}
+
+caption {
+  font-weight: normal;
+  font-size: .9em !important;
+}
+
+#page h2 {
+  margin: 1em 0 0;
+}

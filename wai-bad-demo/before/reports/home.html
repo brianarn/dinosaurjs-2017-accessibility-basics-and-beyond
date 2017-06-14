@@ -1,0 +1,1208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>Inaccessible Home Page Report</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href="../../css/meta.css" rel="stylesheet" type="text/css">
+    <link href="../../css/reportTable.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div id="meta-header">
+      <p id="skipnav"><a href="#page">Jump to beginning of inaccessible report page</a></p>
+      <p id="logos"><a href="http://www.w3.org/" title="W3C Home"><img alt="W3C logo" src="../../img/w3c.png" height="48" width="72"></a><a href="http://www.w3.org/WAI/" title="WAI Home"><img alt="Web Accessibility Initiative (WAI) logo" src="../../img/wai.png" height="48"></a></p>
+      <h1><span class="subhead">Inaccessible Home Page Report </span>Before and After Demonstration</h1>
+      <p class="subline">Improving a Web site using Web Content Accessibility Guidelines (WCAG) 2.0</p>
+      <div id="mnav" class="inaccessible">
+        <ul>
+          <li class="first"><a href="../../Overview.html">Overview</a></li>
+          <li class="current first"><span class="hidden">Current location: </span>Home
+            <div class="subnav subnavreport"><ul>
+              <li class="inaccessible"><strong>Inaccessible:</strong><a href="../home.html" class="page"><span class="hidden">Inaccessible </span>Home Page</a><a class="report current"><span class="hidden">Inaccessible Home Page </span> Report</a></li><li class="accessible"><strong>Accessible:</strong><a href="../../after/home.html" class="page"><span class="hidden">Accessible </span>Home Page</a><a href="../../after/reports/home.html" class="report"><span class="hidden">Accessible Home Page </span> Report</a></li></ul></div>
+          </li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="survey.html">Survey</a></li>
+          <li><a href="template.html">Template</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="page">
+      <div class="main">
+        <h2><a name="perceivable" id="perceivable">Perceivable</a></h2>
+        <table id="p" class="report">
+          <caption>Conformance of Home Page to WCAG 2.0 - Perceivable</caption>
+          <col>
+          <col width="43">
+          <col width="125">
+          <col>
+          <col width="50">
+          <thead>
+            <tr>
+              <td></td>
+              <th>#</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody class="fail">
+            <tr class="guideline fail">
+              <td></td>
+              <td>1.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#text-equiv">Text Alternatives</a></th>
+              <td>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</td>
+              <td><img src="../../img/fail.png" alt="Some success criteria failed" title="Some success criteria failed"></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>1.1.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#text-equiv-all">Non-text Content</a></th>
+              <td>All non-text content that is presented to the user has a text alternative that serves the equivalent purpose, except for the situations listed below. <em>(Level A)</em>
+                <div class="expand">
+                  <ul>
+                    <li><strong>Controls, Input:</strong> If non-text content is a control or accepts user input, then it has a name that describes its purpose. (Refer to Guideline 4.1 for additional requirements for controls and content that accepts user input.)</li>
+                    <li><strong>Time-Based Media:</strong> If non-text content is time-based media, then text alternatives at least provide descriptive identification of the non-text content. (Refer to Guideline 1.2 for additional requirements for media.)</li>
+                    <li><strong>Test:</strong> If non-text content is a test or exercise that would be invalid if presented in text, then text alternatives at least provide descriptive identification of the non-text content.</li>
+                    <li><strong>Sensory:</strong> If non-text content is primarily intended to create a specific sensory experience, then text alternatives at least provide descriptive identification of the non-text content.</li>
+                    <li><strong>CAPTCHA:</strong> If the purpose non-text content is to confirm that content is being accessed by a person rather than a computer, then text alternatives that identify and describe the purpose of the non-text content are provided, and alternative forms of CAPTCHA using output modes for different types of sensory perception are provided to accommodate different disabilities.</li>
+                    <li><strong>Decoration, Formatting, Invisible:</strong> If non-text content is pure decoration, is used only for visual formatting, or is not presented to users, then it is implemented in a way that it can be ignored by assistive technology.</li>
+                  </ul>
+                </div>
+              </td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F3">Failure F3</a> - Failure of Success Criterion 1.1.1 due to using CSS to include images that convey important information</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F20">Failure F20</a> - Failure of Success Criterion 1.1.1 and 4.1.2 due to not updating text alternatives when changes to non-text content occur</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F30">Failure F30</a> - Failure of Success Criterion 1.1.1 and 1.2.1 due to using text alternatives that are not alternatives (e.g. filenames or placeholder text)</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F38">Failure F38</a> - Failure of Success Criterion 1.1.1 due to omitting the alt-attribute for non-text content used for decorative purposes only in HTML</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F39">Failure F39</a> - Failure of Success Criterion 1.1.1 due to providing a text alternative that is not null. (e.g. alt="spacer" or alt="image") for images that should be ignored by assistive technology</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F65">Failure F65</a> - Failure of Success Criterion 1.1.1 due to omitting the alt attribute on img elements, area elements, and input elements of type "image" </li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F71">Failure F71</a> - Failure of Success Criterion 1.1.1 due to using text look-alikes to represent text without providing a text alternative</li>
+              </ul></td>
+            </tr>
+            <tr class="guideline pass">
+              <td></td>
+              <td>1.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#media-equiv">Time-based Media</a></th>
+              <td>Provide alternatives for time-based media.</td>
+              <td><img src="../../img/pass.png" alt="All success criteria met" title="All success criteria met"></td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>1.2.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#media-equiv-av-only-alt">Audio-only and Video-only (Prerecorded)</a></th>
+              <td>For prerecorded audio-only and prerecorded video-only media, the following are true, except when the audio or video is a media alternative for text and is clearly labeled as such: <em>(Level A)</em>
+                <div class="expand">
+                  <ul>
+                    <li><strong>Prerecorded Audio-only:</strong> An alternative for time-based media is provided that presents equivalent information for prerecorded audio-only content.</li>
+                    <li><strong>Prerecorded Video-only:</strong> Either an alternative for time-based media or an audio track is provided that presents equivalent information for prerecorded video-only content.</li>
+                  </ul>
+                </div>
+              </td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>1.2.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#media-equiv-captions">Captions (Prerecorded)</a></th>
+              <td>Captions are provided for all prerecorded audio content in synchronized media, except when the media is a media alternative for text and is clearly labeled as such. <em>(Level A)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>1.2.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#media-equiv-audio-desc">Audio Description or Media Alternative (Prerecorded)</a></th>
+              <td>An alternative for time-based media or audio description of the prerecorded video content is provided for synchronized media, except when the media is a media alternative for text and is clearly labeled as such. <em>(Level A)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass new_level">
+              <td></td>
+              <td>1.2.4</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#media-equiv-real-time-captions">Captions (Live)</a></th>
+              <td>Captions are provided for all live audio content in synchronized media. <em>(Level AA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>1.2.5</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#media-equiv-audio-desc-only">Audio Description (Prerecorded)</a></th>
+              <td>Audio description is provided for all prerecorded video content in synchronized media. <em>(Level AA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass new_level">
+              <td></td>
+              <td>1.2.6</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#media-equiv-sign">Sign Language (Prerecorded)</a></th>
+              <td>Sign language interpretation is provided for all prerecorded audio content in synchronized media. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>1.2.7</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#media-equiv-extended-ad">Extended Audio Description (Prerecorded)</a></th>
+              <td>Where pauses in foreground audio are insufficient to allow audio descriptions to convey the sense of the video, extended audio description is provided for all prerecorded video content in synchronized media. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>1.2.8</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#media-equiv-text-doc">Media Alternative (Prerecorded)</a></th>
+              <td>An alternative for time-based media is provided for all prerecorded synchronized media and for all prerecorded video-only media. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>1.2.9</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#media-equiv-live-audio-only">Audio-only (Live)</a></th>
+              <td>An alternative for time-based media that presents equivalent information for live audio-only content is provided. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="guideline fail">
+              <td></td>
+              <td>1.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#content-structure-separation">Adaptable</a></th>
+              <td>Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</td>
+              <td><img src="../../img/fail.png" alt="Some success criteria failed" title="Some success criteria failed"></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>1.3.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#content-structure-separation-programmatic">Info and Relationships</a> </th>
+              <td>Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. <em>(Level A)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F2">Failure F2</a> - Failure of Success Criterion 1.3.1 due to using changes in text presentation to convey information without using the appropriate markup or text</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F68">Failure F68</a> - Failure of Success Criterion 1.3.1 and 4.1.2 due to the association of label and user interface controls not being programmatically determinable</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>1.3.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#content-structure-separation-sequence">Meaningful Sequence</a></th>
+              <td>When the sequence in which content is presented affects its meaning, a correct reading sequence can be programmatically determined. <em>(Level A)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F1">Failure F1</a> - Failure of Success Criterion 1.3.2 due to changing the meaning of content by positioning information with CSS</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F49">Failure F49</a> - Failure of Success Criterion 1.3.2 due to using an HTML layout table that does not make sense when linearized</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>1.3.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#content-structure-separation-understanding">Sensory Characteristics</a></th>
+              <td>Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound. <em>(Level A)</em>
+                <div class="expand">
+                  <p><em>Note:</em> For requirements related to color, refer to <a href="http://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast">Guideline 1.3</a>.</p>
+                </div>
+              </td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="guideline fail">
+              <td></td>
+              <td>1.4</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast">Distinguishable</a></th>
+              <td>Make it easier for users to see and hear content including separating foreground from background.</td>
+              <td><img src="../../img/fail.png" alt="Some success criteria failed" title="Some success criteria failed"></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>1.4.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-without-color">Use of Color</a></th>
+              <td>Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. <em>(Level A)</em>
+                <div class="expand">
+                  <p><em>Note:</em> This success criterion addresses color perception specifically. Other forms of perception are covered in <a href="http://www.w3.org/WAI/WCAG20/quickref/#content-structure-separation">Guideline 1.3</a> including programmatic access to color and other visual presentation coding.</p>
+                </div>
+              </td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F73">Failure F73</a> - Failure of Success Criterion 1.4.1 due to creating links that are not visually evident without color vision</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>1.4.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-dis-audio">Audio Control</a></th>
+              <td>If any audio on a Web page plays automatically for more than 3 seconds, either a mechanism is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level. <em>(Level A)</em>
+                <div class="expand">
+                  <p><em>Note:</em> Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether or not it is used to meet other success criteria) must meet this success criterion. See <a href="http://www.w3.org/WAI/WCAG20/quickref/#conformance-reqs">Conformance Requirement 5: Non-Interference</a>.</p>
+                </div>
+              </td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion fail new_level">
+              <td></td>
+              <td>1.4.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-contrast">Contrast (Minimum)</a></th>
+              <td>The visual presentation of text and images of text has a contrast ratio of at least 4.5:1, except for the following: <em>(Level AA)</em>
+                <div class="expand">
+                  <ul>
+                    <li><strong>Large Text:</strong> Large-scale text and images of large-scale text have a contrast ratio of at least 3:1;</li>
+                    <li><strong>Incidental:</strong> Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.</li>
+                    <li><strong>Logotypes:</strong> Text that is part of a logo or brand name has no minimum contrast requirement.</li>
+                  </ul>
+                </div>
+              </td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li>The visual presentation of text does not have a contrast ratio of at least 4.5:1</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F24">Failure F24</a> - Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without specifying background colors or vice versa</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>1.4.4</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-scale">Resize text</a></th>
+              <td>Except for captions and images of text, text can be resized without assistive technology up to 200 percent without loss of content or functionality. <em>(Level AA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2"><ul>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G142">Technique G142</a> - Using a technology that has commonly-available user agents that support zoom</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G179">Technique G179</a> - Ensuring that there is no loss of content or functionality when the text resizes and text containers do not resize</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>1.4.5</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-text-presentation">Images of Text</a></th>
+              <td>If the technologies being used can achieve the visual presentation, text is used to convey information rather than images of text except for the following: <em>(Level AA)</em>
+                <div class="expand">
+                  <ul>
+                    <li><strong>Customizable:</strong> The image of text can be visually customized to the user's requirements;</li>
+                    <li><strong>Essential:</strong> A particular presentation of text is essential to the information being conveyed.</li>
+                  </ul>
+                  <p><em>Note:</em> Logotypes (text that is part of a logo or brand name) are considered essential.</p>
+                </div>
+              </td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2">Text in HTML and CSS decoration can be used to achieve the same visual presentation, rather than using images of text</td>
+            </tr>
+            <tr class="criterion fail new_level">
+              <td></td>
+              <td>1.4.6</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast7">Contrast (Enhanced)</a></th>
+              <td>The visual presentation of text and images of text has a contrast ratio of at least 7:1, except for the following: <em>(Level AAA)</em>
+                <div class="expand">
+                  <ul>
+                    <li><strong>Large Text:</strong> Large-scale text and images of large-scale text have a contrast ratio of at least 4.5:1;</li>
+                    <li><strong>Incidental:</strong> Text or images of text that are part of an inactive user interface component, that are pure decoration, that are not visible to anyone, or that are part of a picture that contains significant other visual content, have no contrast requirement.</li>
+                    <li><strong>Logotypes:</strong> Text that is part of a logo or brand name has no minimum contrast requirement.</li>
+                  </ul>
+                </div>
+              </td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li>The visual presentation of text does not have a contrast ratio of at least 7:1</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F24">Failure F24</a> - Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without specifying background colors or vice versa</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>1.4.7</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-noaudio">Low or No Background Audio</a></th>
+              <td>For prerecorded audio-only content that (1) contains primarily speech in the foreground, (2) is not an audio CAPTCHA or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true: <em>(Level AAA)</em>
+                <div class="expand">
+                  <ul>
+                    <li><strong>No Background:</strong> The audio does not contain background sounds.</li>
+                    <li><strong>Turn Off:</strong> The background sounds can be turned off.</li>
+                    <li><strong>20 dB:</strong> The background sounds are at least 20 decibels lower than the foreground speech content, with the exception of occasional sounds that last for only one or two seconds.</li>
+                  </ul>
+                  <p><em>Note:</em> Per the definition of "decibel," background sound that meets this requirement will be approximately four times quieter than the foreground speech content.</p>
+                </div>
+              </td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>1.4.8</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-visual-presentation">Visual Presentation</a></th>
+              <td>For the visual presentation of blocks of text, a mechanism is available to achieve the following: <em>(Level AAA)</em>
+                <div class="expand">
+                  <ol>
+                    <li>foreground and background colors can be selected by the user</li>
+                    <li>width is no more than 80 characters or glyphs (40 if CJK)</li>
+                    <li>text is not justified (aligned to both the left and the right margins)</li>
+                    <li>line spacing (leading) is at least space-and-a-half within paragraphs, and paragraph spacing is at least 1.5 times larger than the line spacing</li>
+                    <li>text can be resized without assistive technology up to 200 percent in a way that does not require the user to scroll horizontally to read a line of text on a full-screen window</li>
+                  </ol>
+                </div>
+              </td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li>Line spacing can not be adjusted to 1.5 times larger without losing information or functionality</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F24">Failure F24</a> - Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to specifying foreground colors without specifying background colors or vice versa</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>1.4.9</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#visual-audio-contrast-text-images">Images of Text (No Exception)</a></th>
+              <td>Images of text are only used for pure decoration or where a particular presentation of text is essential to the information being conveyed. <em>(Level AAA)</em>
+                <div class="expand">
+                  <p><em>Note:</em> Logotypes (text that is part of a logo or brand name) are considered essential.</p>
+                </div>
+              </td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2">Images of text are used for non-decorative purposes while the particular presentation of text is not essential to the information being conveyed</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h2><a name="operable" id="operable">Operable</a></h2>
+        <table id="o" class="report">
+          <caption>Conformance of Home Page to WCAG 2.0 - Operable</caption>
+          <col>
+          <col width="43">
+          <col width="125">
+          <col>
+          <col width="50">
+          <thead>
+            <tr>
+              <td></td>
+              <th>#</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody class="fail">
+            <tr class="guideline fail">
+              <td></td>
+              <td>2.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#keyboard-operation">Keyboard Accessible</a></th>
+              <td>Make all functionality available from a keyboard.</td>
+              <td><img src="../../img/fail.png" alt="Some success criteria failed" title="Some success criteria failed"></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>2.1.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#keyboard-operation-keyboard-operable">Keyboard</a></th>
+              <td>All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints. <em>(Level A)</em>
+                <div class="expand">
+                  <p><em>Note 1:</em> This exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path dependent input but the underlying function (text input) does not.</p>
+                  <p><em>Note 2:</em> This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation.</p>
+                </div>
+              </td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F54">Failure F54</a> - Failure of Success Criterion 2.1.1 due to using only pointing-device-specific event handlers (including gesture) for a function</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F55">Failure F55</a> - Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>2.1.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#keyboard-operation-trapping">No Keyboard Trap</a></th>
+              <td>If keyboard focus can be moved to a component of the page using a keyboard interface, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away. <em>(Level A)</em>
+                <div class="expand">
+                  <p><em>Note:</em> Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See <a href="http://www.w3.org/WAI/WCAG20/quickref/#conformance-reqs">Conformance Requirement 5: Non-Interference</a>.</p>
+                </div>
+              </td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2"><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G21">Technique G21</a> - Ensuring that users are not trapped in content</td>
+            </tr>
+            <tr class="criterion fail new_level">
+              <td></td>
+              <td>2.1.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#keyboard-operation-all-funcs">Keyboard (No Exception)</a></th>
+              <td>All functionality of the content is operable through a keyboard interface without requiring specific timings for individual keystrokes. <em>(Level AAA)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F54">Failure F54</a> - Failure of Success Criterion 2.1.1 due to using only pointing-device-specific event handlers (including gesture) for a function</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F55">Failure F55</a> - Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received</li>
+              </ul></td>
+            </tr>
+            <tr class="guideline pass">
+              <td></td>
+              <td>2.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#time-limits">Enough Time</a></th>
+              <td>Provide users enough time to read and use content.</td>
+              <td><img src="../../img/pass.png" alt="All success criteria met" title="All success criteria met"></td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>2.2.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#time-limits-required-behaviors">Timing Adjustable</a></th>
+              <td>For each time limit that is set by the content, at least one of the following is true: <em>(Level A)</em>
+                <div class="expand">
+                  <ul>
+                    <li><strong>Turn off:</strong> The user is allowed to turn off the time limit before encountering it; or</li>
+                    <li><strong>Adjust:</strong> The user is allowed to adjust the time limit before encountering it over a wide range that is at least ten times the length of the default setting; or</li>
+                    <li><strong>Extend:</strong> The user is warned before time expires and given at least 20 seconds to extend the time limit with a simple action (for example, "press the space bar"), and the user is allowed to extend the time limit at least ten times; or</li>
+                    <li><strong>Real-time Exception:</strong> The time limit is a required part of a real-time event (for example, an auction), and no alternative to the time limit is possible; or</li>
+                    <li><strong>Essential Exception:</strong> The time limit is essential and extending it would invalidate the activity; or</li>
+                    <li><strong>20 Hour Exception:</strong> The time limit is longer than 20 hours.</li>
+                  </ul>
+                  <p><em>Note:</em> This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with <a href="http://www.w3.org/WAI/WCAG20/quickref/#consistent-behavior-receive-focus">Success Criterion 3.2.1</a> which puts limits on changes of content or context as a result of user action.</p>
+                </div>
+              </td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>2.2.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#time-limits-pause">Pause, Stop, Hide</a></th>
+              <td>For moving, blinking, scrolling, or auto-updating information, all of the following are true: <em>(Level A)</em>
+                <div class="expand">
+                  <ul>
+                    <li><strong>Moving, blinking, scrolling:</strong> For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is essential; and</li>
+                    <li><strong>Auto-updating:</strong> For any auto-updating information that (1) starts automatically and (2) is presented in parallel with other content, there is a mechanism for the user to pause, stop, or hide it or to control the frequency of the update unless the auto-updating is part of an activity where it is essential.</li>
+                  </ul>
+                  <p><em>Note 1:</em> For requirements related to flickering or flashing content, refer to <a href="http://www.w3.org/WAI/WCAG20/quickref/#seizure">Guideline 2.3</a>.</p>
+                  <p><em>Note 2:</em> Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See <a href="http://www.w3.org/WAI/WCAG20/quickref/#conformance-reqs">Conformance Requirement 5: Non-Interference</a>.</p>
+                  <p><em>Note 3:</em> Content that is updated periodically by software, or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation, as this may not be technically possible, and in many situations could be misleading to do so.</p>
+                  <p><em>Note 4:</em> An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users, and if not indicating progress could confuse users or cause them to think that content was frozen or broken.</p>
+                </div>
+              </td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass new_level">
+              <td></td>
+              <td>2.2.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#time-limits-no-exceptions">No Timing</a></th>
+              <td>Timing is not an essential part of the event or activity presented by the content, except for non-interactive synchronized media and real-time events. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2"><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G5">Technique G5</a> - Allowing users to complete an activity without any time limit</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>2.2.4</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#time-limits-postponed">Interruptions</a></th>
+              <td>Interruptions can be postponed or suppressed by the user, except interruptions involving an emergency. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>2.2.5</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#time-limits-server-timeout">Re-authenticating</a></th>
+              <td>When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="guideline pass">
+              <td></td>
+              <td>2.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#seizure">Seizures</a></th>
+              <td>Do not design content in a way that is known to cause seizures.</td>
+              <td><img src="../../img/pass.png" alt="All success criteria met" title="All success criteria met"></td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>2.3.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#seizure-does-not-violate">Three Flashes or Below Threshold</a></th>
+              <td>Web pages do not contain anything that flashes more than three times in any one second period, or the flash is below the general flash and red flash thresholds. <em>(Level A)</em>
+                <div class="expand">
+                  <p><em>Note:</em> Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion. See <a href="http://www.w3.org/WAI/WCAG20/quickref/#conformance-reqs">Conformance Requirement 5: Non-Interference</a>.</p>
+                </div>
+              </td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2"><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G19">Technique G19</a> - Ensuring that no component of the content flashes more than three times in any 1-second period</td>
+            </tr>
+            <tr class="criterion pass new_level">
+              <td></td>
+              <td>2.3.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#seizure-three-times">Three Flashes</a></th>
+              <td>Web pages do not contain anything that flashes more than three times in any one second period. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2"><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G19">Technique G19</a> - Ensuring that no component of the content flashes more than three times in any 1-second period</td>
+            </tr>
+            <tr class="guideline fail">
+              <td></td>
+              <td>2.4</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms">Navigable</a></th>
+              <td>Provide ways to help users navigate, find content and determine where they are.</td>
+              <td><img src="../../img/fail.png" alt="Some success criteria failed" title="Some success criteria failed"></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>2.4.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-skip">Bypass Blocks</a></th>
+              <td>A mechanism is available to bypass blocks of content that are repeated on multiple Web pages. <em>(Level A)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2">No mechanisms are available to bypass blocks of content that are repeated on multiple Web pages</td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>2.4.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-title">Page Titled</a></th>
+              <td>Web pages have titles that describe topic or purpose. <em>(Level A)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F25">Failure F25</a> - Failure of Success Criterion 2.4.2 due to the title of a Web page not identifying the contents</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>2.4.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-focus-order">Focus Order</a></th>
+              <td>If a Web page can be navigated sequentially and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability. <em>(Level A)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2"><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G59">Technique G59</a> - Placing the interactive elements in an order that follows sequences and relationships within the content</td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>2.4.4</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-refs">Link Purpose (In Context)</a></th>
+              <td>The purpose of each link can be determined from the link text alone, or from the link text together with its programmatically determined link context, except where the purpose of the link would be ambiguous to users in general. <em>(Level A)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F63">Failure F63</a> - Failure of Success Criterion 2.4.4 due to providing link context only in content that is not related to the link</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F89">Failure F89</a> - Failure of 2.4.4, 2.4.9 and 4.1.2 due to using null alt on an image where the image is the only content in a link</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion pass new_level">
+              <td></td>
+              <td>2.4.5</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-mult-loc">Multiple Ways</a></th>
+              <td>More than one way is available to locate a Web page within a set of Web pages  except where the Web Page is the result of, or a step in, a process. <em>(Level AA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2"><ul>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G125">Technique G125</a> - Providing links to navigate to related Web pages</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G126">Technique G126</a> - Providing a list of links to all other Web pages</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G185">Technique G185</a> - Linking to all of the pages on the site from the home page</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>2.4.6</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-descriptive">Headings and Labels</a></th>
+              <td>Headings and labels describe topic or purpose. <em>(Level AA)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2">Headings are not programmatically determined</td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>2.4.7</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-focus-visible">Focus Visible</a></th>
+              <td>Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible. <em>(Level AA)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F55">Failure F55</a> - Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F78">Failure F78</a> - Failure of Success Criterion 2.4.7 due to styling element outlines and borders in a way that removes or renders non-visible the visual focus indicator</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion fail new_level">
+              <td></td>
+              <td>2.4.8</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-location">Location</a></th>
+              <td>Information about the user's location within a set of Web pages is available. <em>(Level AAA)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2">No information is available about the user's location within a set of Web pages</td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>2.4.9</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-link">Link Purpose (Link Only)</a></th>
+              <td>A mechanism is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be ambiguous to users in general. <em>(Level AAA)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F84">Failure F84</a> - Failure of Success Criterion 2.4.9 due to using a non-specific link such as "click here" or "more" without a mechanism to change the link text to specific text</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F89">Failure F89</a> - Failure of 2.4.4, 2.4.9 and 4.1.2 due to using null alt on an image where the image is the only content in a link</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>2.4.10</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-headings">Section Headings</a></th>
+              <td>Section headings are used to organize the content. <em>(Level AAA)</em>
+                <div class="expand">
+                  <p><em>Note 1:</em> "Heading" is used in its general sense and includes titles and other ways to add a heading to different types of content.</p>
+                  <p><em>Note 2:</em> This success criterion covers sections within writing, not user interface components. User Interface components are covered under <a href="http://www.w3.org/WAI/WCAG20/quickref/#ensure-compat-rsv">Success Criterion 4.1.2</a>.</p>
+                </div>
+              </td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2">Headings are not programmatically determined</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h2><a name="understandable" id="understandable">Understandable</a></h2>
+        <table id="u" class="report">
+          <caption>Conformance of Home Page to WCAG 2.0 - Understandable</caption>
+          <col>
+          <col width="43">
+          <col width="125">
+          <col>
+          <col width="50">
+          <thead>
+            <tr>
+              <td></td>
+              <th>#</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody class="fail">
+            <tr class="guideline fail">
+              <td></td>
+              <td>3.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#meaning">Readable</a></th>
+              <td>Make text content readable and understandable.</td>
+              <td><img src="../../img/fail.png" alt="Some success criteria failed" title="Some success criteria failed"></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>3.1.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#meaning-doc-lang-id">Language of Page</a></th>
+              <td>The default human language of each Web page can be programmatically determined. <em>(Level A)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2">The default human language of the Web page can not be programmatically determined</td>
+            </tr>
+            <tr class="criterion pass new_level">
+              <td></td>
+              <td>3.1.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#meaning-other-lang-id">Language of Parts</a></th>
+              <td>The human language of each passage or phrase in the content can be programmatically determined except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text. <em>(Level AA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass new_level">
+              <td></td>
+              <td>3.1.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#meaning-idioms">Unusual Words</a></th>
+              <td>A mechanism is available for identifying specific definitions of words or phrases used in an unusual or restricted way, including idioms and jargon. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>3.1.4</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#meaning-located">Abbreviations</a></th>
+              <td>A mechanism for identifying the expanded form or meaning of abbreviations is available. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>3.1.5</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#meaning-supplements">Reading Level</a></th>
+              <td>When text requires reading ability more advanced than the lower secondary education level after removal of proper names and titles, supplemental content, or a version that does not require reading ability more advanced than the lower secondary education level, is available. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2"><a href="http://www.w3.org/WAI/WCAG20/quickref/G153">Technique G153</a> - Making the text easier to read</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>3.1.6</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#meaning-pronunciation">Pronunciation</a></th>
+              <td>A mechanism is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="guideline fail">
+              <td></td>
+              <td>3.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#consistent-behavior">Predictable</a></th>
+              <td>Make Web pages appear and operate in predictable ways.</td>
+              <td><img src="../../img/fail.png" alt="Some success criteria failed" title="Some success criteria failed"></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>3.2.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#consistent-behavior-receive-focus">On Focus</a></th>
+              <td>When any component receives focus, it does not initiate a change of context. <em>(Level A)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F55">Failure F55</a> - Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to using script to remove focus when focus is received</td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>3.2.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#consistent-behavior-unpredictable-change">On Input</a></th>
+              <td>Changing the setting of any user interface component does not automatically cause a change of context unless the user has been advised of the behavior before using the component. <em>(Level A)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2">Change of context without prior warning when the status of a select list is changed</td>
+            </tr>
+            <tr class="criterion pass new_level">
+              <td></td>
+              <td>3.2.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#consistent-behavior-consistent-locations">Consistent Navigation</a></th>
+              <td>Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user. <em>(Level AA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2"><p><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/G61">Technique G61</a> - Presenting repeated components in the same relative order each time they appear</p>
+              <p><strong>Advisory Techniques</strong></p>
+              <ul>
+                <li>Future Link - Using templates to ensure consistency across multiple Web pages</li>
+              </ul></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>3.2.4</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#consistent-behavior-consistent-functionality">Consistent Identification</a></th>
+              <td>Components that have the same functionality within a set of Web pages are identified consistently. <em>(Level AA)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2">Components that have the same functionality within a set of Web pages are not identified at all</td>
+            </tr>
+            <tr class="criterion fail new_level">
+              <td></td>
+              <td>3.2.5</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#consistent-behavior-no-extreme-changes-context">Change on Request</a></th>
+              <td>Changes of context are initiated only by user request or a mechanism is available to turn off such changes. <em>(Level AAA)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2">Change of context without prior warning when the status of a select list is changed</td>
+            </tr>
+            <tr class="guideline fail">
+              <td></td>
+              <td>3.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#minimize-error">Input Assistance</a></th>
+              <td>Help users avoid and correct mistakes.</td>
+              <td><img src="../../img/fail.png" alt="Some success criteria failed" title="Some success criteria failed"></td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>3.3.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#minimize-error-identified">Error Identification</a></th>
+              <td>If an input error is automatically detected, the item that is in error is identified and the error is described to the user in text. <em>(Level A)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>3.3.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#minimize-error-cues">Labels or Instructions</a></th>
+              <td>Labels or instructions are provided when content requires user input. <em>(Level A)</em></td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2">Label is not provided for form control</td>
+            </tr>
+            <tr class="criterion pass new_level">
+              <td></td>
+              <td>3.3.3</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#minimize-error-suggestions">Error Suggestion</a></th>
+              <td>If an input error is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content. <em>(Level AA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>3.3.4</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#minimize-error-reversible">Error Prevention (Legal, Financial, Data)</a></th>
+              <td>For Web pages that cause legal commitments or financial transactions for the user to occur, that modify or delete user-controllable data in data storage systems, or that submit user test responses, at least one of the following is true: <em>(Level AA)</em>
+                <div class="expand">
+                  <ol>
+                    <li><strong>Reversible:</strong> Submissions are reversible.</li>
+                    <li><strong>Checked:</strong> Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.</li>
+                    <li><strong>Confirmed:</strong> A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.</li>
+                  </ol>
+                </div>
+              </td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass new_level">
+              <td></td>
+              <td>3.3.5</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#minimize-error-context-help">Help</a></th>
+              <td>Context-sensitive help is available. <em>(Level AAA)</em></td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+            <tr class="criterion pass">
+              <td></td>
+              <td>3.3.6</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#minimize-error-reversible-all">Error Prevention (All)</a></th>
+              <td>For Web pages that require the user to submit information, at least one of the following is true: <em>(Level AAA)</em>
+                <div class="expand">
+                  <ol>
+                    <li><strong>Reversible:</strong> Submissions are reversible.</li>
+                    <li><strong>Checked:</strong> Data entered by the user is checked for input errors and the user is provided an opportunity to correct them.</li>
+                    <li><strong>Confirmed:</strong> A mechanism is available for reviewing, confirming, and correcting information before finalizing the submission.</li>
+                  </ol>
+                </div>
+              </td>
+              <td>Pass</td>
+            </tr>
+            <tr class="evaluation pass">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/technique.png" alt=""> Techniques</th>
+              <td colspan="2">Pass due to no corresponding content</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <h2><a name="robust" id="robust">Robust</a></h2>
+        <table id="r" class="report">
+          <caption>Conformance of Home Page to WCAG 2.0 - Robust</caption>
+          <col>
+          <col width="43">
+          <col width="125">
+          <col>
+          <col width="50">
+          <thead>
+            <tr>
+              <td></td>
+              <th>#</th>
+              <th>Title</th>
+              <th>Description</th>
+              <th>Result</th>
+            </tr>
+          </thead>
+          <tbody class="fail">
+            <tr class="guideline fail">
+              <td></td>
+              <td>4.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#ensure-compat">Compatible</a></th>
+              <td>Maximize compatibility with current and future user agents, including assistive technologies.</td>
+              <td><img src="../../img/fail.png" alt="Some success criteria failed" title="Some success criteria failed"></td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>4.1.1</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#ensure-compat-parses">Parsing</a></th>
+              <td>In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features. <em>(Level A)</em>
+                <div class="expand">
+                  <p><em>Note:</em> Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete.</p>
+                </div>
+              </td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F70">Failure F70</a> - Failure of Success Criterion 4.1.1 due to incorrect use of start and end tags or attribute markup</td>
+            </tr>
+            <tr class="criterion fail">
+              <td></td>
+              <td>4.1.2</td>
+              <th><a href="http://www.w3.org/WAI/WCAG20/quickref/#ensure-compat-rsv">Name, Role, Value</a></th>
+              <td>For all user interface components (including but not limited to: form elements, links and components generated by scripts), the name and role can be programmatically determined; states, properties, and values that can be set by the user can be programmatically set; and notification of changes to these items is available to user agents, including assistive technologies. <em>(Level A)</em>
+                <div class="expand">
+                  <p><em>Note:</em> This success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification.</p>
+                </div>
+              </td>
+              <td>Fail</td>
+            </tr>
+            <tr class="evaluation fail">
+              <td></td>
+              <td></td>
+              <th><img src="../../img/howto.png" alt=""> Failures</th>
+              <td colspan="2"><ul>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F68">Failure F68</a> - Failure of Success Criterion 1.3.1 and 4.1.2 due to the association of label and user interface controls not being programmatically determinable</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F79">Failure F79</a> - Failure of Success Criterion 4.1.2 due to the focus state of a user interface component not being programmatically determinable or no notification of change of focus state available</li>
+                <li><a href="http://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/F89">Failure F89</a> - Failure of 2.4.4, 2.4.9 and 4.1.2 due to using null alt on an image where the image is the only content in a link</li>
+              </ul></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="meta-footer" class="meta">
+      <hr>
+      <p><strong>Status:</strong> 20 February 2012 (see <a href="../../changelog.html">changelog</a>) <br>Editors: <a href="http://www.w3.org/People/shadi/">Shadi Abou-Zahra</a> and the <a href="http://www.w3.org/WAI/EO/">Education and Outreach Working Group (EOWG)</a>. <br>Developed with support from <a href="http://www.w3.org/WAI/TIES/"><acronym title="Web Accessibility Initiative: Training, Implementation, Education, Support">WAI-TIES</acronym></a> and <a href="http://www.w3.org/WAI/WAI-AGE/"><acronym title="Web Accessibility Initiative: Ageing Education and Harmonisation">WAI-AGE</acronym></a> projects, co-funded by the European Commission <acronym title="Information Society Technologies">IST</acronym> Programme. [see <a href="../../acks.html">Acknowledgements</a>]</p>
+      <p>[<a href="http://www.w3.org/WAI/sitemap.html" shape="rect">WAI Site Map</a>] [<a href="http://www.w3.org/WAI/sitehelp.html" shape="rect">Help with WAI Website</a>] [<a href="http://www.w3.org/WAI/search.php" shape="rect">Search</a>] [<a href="http://www.w3.org/WAI/contacts" shape="rect">Contacting WAI</a>] <br><strong>Feedback welcome to <a href="mailto:wai-eo-editors@w3.org" shape="rect">wai-eo-editors@w3.org</a></strong> (a publicly archived list) or <a href="mailto:wai@w3.org" shape="rect">wai@w3.org</a> (a WAI staff-only list).</p>
+      <div class="copyright"><p><a rel="Copyright" href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> &copy; 2012 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>&reg;</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>, <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> and <a rel="Copyright" href="http://www.w3.org/Consortium/Legal/copyright-software">software licensing</a> rules apply. Your interactions with this site are in accordance with our <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Public">public</a> and <a href="http://www.w3.org/Consortium/Legal/privacy-statement#Members">Member</a> privacy statements.</p></div>
+    </div>
+    <script src="../../js/reportTable.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        var p = new reportTable();
+        var o = new reportTable();
+        var u = new reportTable();
+        var r = new reportTable();
+        p.setTable("p"); p.init();
+        o.setTable("o"); o.init();
+        u.setTable("u"); u.init();
+        r.setTable("r"); r.init();
+      }
+    </script>
+  </body>
+</html>
