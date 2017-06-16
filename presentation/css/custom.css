@@ -113,6 +113,7 @@
 .reveal .pb1 { padding-bottom: 1em; }
 .reveal .pt1 { padding-top: 1em; }
 .reveal .w50 { width: 50%; }
+.reveal .w75 { width: 75%; }
 
 /* Slide-specific styles */
 .fragment-images img.fragment {
