@@ -19,3 +19,12 @@ If you're running on a system with php available, you can execute `php -S
 localhost:4000` within the `wai-bad-demo` to serve it locally.
 
 It can also be interacted with directly at the above website.
+
+## Resources
+
+- [W3C WAI on YouTube](https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA)
+- [Inclusive Design at Microsoft](https://www.microsoft.com/en-us/design/inclusive)
+- [WCAG 2.0 quick reference](https://www.w3.org/WAI/WCAG20/quickref/)
+- [aXe](https://www.deque.com/products/axe/) - open-source accessibility testing tool
+- [tota11y](http://khan.github.io/tota11y/) - an accessibility visualization toolkit
+- [ChromeVox](http://www.chromevox.com/) - Chrome screenreader plugin
