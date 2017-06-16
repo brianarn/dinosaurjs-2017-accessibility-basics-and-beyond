@@ -50,7 +50,7 @@
               <li>How do we know?</li>
               <li>Principles</li>
               <li>Guidelines</li>
-              <li>Demonstration</li>
+              <li>Examples</li>
               <li>Applications?</li>
             </ul>
           </section>
@@ -116,7 +116,7 @@
               <a href="https://www.youtube.com/playlist?list=PLsFpJ-5rcByiPpq2j0MfLSmhBGELDWLoD">Go to videos</a>
             </p>
           </section>
-          <section class="inclusive-design">
+          <section class="fragment-images">
             <h2>Inclusive Design</h2>
             <p>Courtesy <a href="https://www.microsoft.com/en-us/design/inclusive">Microsoft's Inclusive Design</a></p>
             <img class="fragment current-visible" src="img/inclusive-see.png" alt="">
@@ -430,6 +430,12 @@
               </ul>
             </aside>
           </section>
+          <section class="fragment-images">
+            <h2>Example: Visibility of focus ring</h2>
+            <p><code>*:focus{ outline: none; }</code></p>
+            <img src="img/focus_ring_hidden.png" class="fragment current-visible" alt="Screenshot of focused element with no focus ring">
+            <img src="img/focus_ring_visible.png" class="fragment current-visible" alt="Screenshot of focused element with ring">
+          </section>
         </section>
 
         <section>
@@ -510,8 +516,30 @@
 
         <section>
           <section>
-            <h1>Demonstration</h1>
-            <p>WAI Before and After demo</p>
+            <h1>Examples</h1>
+          </section>
+          <section data-transition="slide-in none-out">
+            <h3>Example: Fixing a button</h3>
+            <pre><code data-noescape>
+  &lt;<span class="fragment highlight-current" data-fragment-index="1">a</span> class="close-button" <span class="fragment highlight-current" data-fragment-index="2">href="javascript:void(0);"</span>&gt;
+    &lt;span class="icon icon-close-light"&gt;&lt;/span&gt;
+  &lt;/<span class="fragment highlight-current" data-fragment-index="1">a</span>&gt;
+            </code></pre>
+          </section>
+          <section data-transition="none-in slide-out">
+            <h3>Example: Fixing a button</h3>
+            <pre><code data-noescape>
+  &lt;<span class="fragment highlight-current" data-fragment-index="1">button</span> class="close-button" <span class="fragment highlight-current" data-fragment-index="2">aria-label="close"</span>&gt;
+    &lt;span class="icon icon-close-light"&gt;&lt;/span&gt;
+  &lt;/<span class="fragment highlight-current" data-fragment-index="1">button</span>&gt;
+            </code></pre>
+          </section>
+          <section>
+            <h2>Exploring</h2>
+            <ul>
+              <li>Bazaarvoice's UI</li>
+              <li>WAI Before and After</li>
+            </ul>
           </section>
         </section>
 
@@ -584,26 +612,28 @@
           { src: 'plugin/markdown/marked.js' },
           { src: 'plugin/markdown/markdown.js' },
           { src: 'plugin/notes/notes.js', async: true },
-          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'socket.io/socket.io.js', async: true },
+          { src: 'plugin/notes-server/client.js', async: true }
         ]
       });
 
-      function toggleInclusiveDesign(event) {
+      function toggleFragmentImages(event) {
         var fragment = event.fragment;
 
         // Inclusive Design slide
         // Actively hide elements from the DOM that aren't the current fragment
         // that is being shown.
-        var inclusiveDesign = fragment.closest('.inclusive-design');
-        if (inclusiveDesign) {
-          inclusiveDesign.querySelectorAll('.fragment').forEach(function (node) {
+        var parent = fragment.closest('.fragment-images');
+        if (parent) {
+          parent.querySelectorAll('img.fragment').forEach(function (node) {
             node.style.display = 'none';
           });
           fragment.style.display = '';
         }
       }
 
-      Reveal.addEventListener('fragmentshown', toggleInclusiveDesign);
+      Reveal.addEventListener('fragmentshown', toggleFragmentImages);
     </script>
   </body>
 </html>
